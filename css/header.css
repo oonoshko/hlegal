@@ -245,6 +245,12 @@
   .header .wrapper {
     padding: 50px 0 60px 0;
   }
+  .gradient-body .up-header {
+    padding: 0;
+    background-color: unset;
+    justify-content: left;
+    gap: 6px;
+  }
   .up-header {
     padding: 0;
     background-color: unset;
@@ -360,10 +366,15 @@
     grid-template-rows: repeat(2, 1fr);
   }
 
+  .gradient-body .up-header {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    justify-content: flex-end;
+  }
   .up-header {
     grid-column: 2/4;
     grid-row: 1/2;
-    justify-content: end;
+    justify-content: flex-end;
   }
   .logo {
     grid-column: 1/2;
@@ -374,7 +385,9 @@
   .burger-menu {
     grid-column: 2/4;
     grid-row: 2/3;
-    justify-content: end;
+  }
+  .nav-burger .links {
+    justify-content: flex-end;
     align-items: flex-end;
   }
 }
