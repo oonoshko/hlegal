@@ -1,0 +1,406 @@
+/* ..............header, up-header.............. */
+.gradient-body .header {
+  background-color: transparent;
+  color: #ffffff;
+  position: absolute;
+}
+.header {
+  width: 100%;
+}
+.header .wrapper {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.gradient-body .up-header {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+.up-header {
+  width: 100%;
+  background-color: #f5f5fa;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.form-languages {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  position: relative;
+}
+.form-languages input {
+  position: absolute;
+  opacity: 0;
+}
+.language {
+  padding: 5px 7px;
+  cursor: pointer;
+}
+.form-languages input:focus ~ .language {
+  background-color: #f0145a;
+  color: #ffffff;
+  border-radius: 8px;
+}
+.dot {
+  display: none;
+}
+.up-header .adress {
+  display: none;
+}
+.up-header .tel {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+.up-header .contacts svg {
+  display: none;
+}
+
+/* ..............logo-burger.............. */
+.logo {
+  padding: 15px 0 10px 15px;
+  z-index: 1;
+}
+
+.logo > img {
+  max-width: 69px;
+  max-height: 32px;
+}
+.logo .slash {
+  max-width: 11px;
+  max-height: 26px;
+  margin: 0 4px;
+  color: #f0145a;
+}
+.logo .text-logo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* ..............burger menu.............. */
+.burger-menu {
+  padding: 15px 15px 10px 0;
+  display: flex;
+  align-items: center;
+}
+.checkbox {
+  position: absolute;
+  min-width: 32px;
+  min-height: 32px;
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+  border: 1px solid;
+}
+.burger {
+  min-width: 32px;
+  min-height: 32px;
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+}
+.gradient-body .burger span {
+  display: inline-block;
+  min-width: 18px;
+  min-height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 7px;
+  opacity: 1;
+}
+.burger span {
+  display: inline-block;
+  min-width: 18px;
+  min-height: 2px;
+  background-color: #323264;
+  position: absolute;
+  left: 7px;
+  opacity: 1;
+}
+.burger span:first-child {
+  top: 8px;
+}
+.burger span:nth-child(2),
+.burger span:nth-child(3) {
+  top: 16px;
+}
+.burger span:last-child {
+  top: 22px;
+}
+.checkbox:active + .burger {
+  background-color: #e6e6f0;
+  border-radius: 8px;
+}
+.checkbox:checked + .burger span:first-child,
+.checkbox:checked + .burger span:last-child {
+  opacity: 0;
+}
+.checkbox:checked + .burger span:nth-child(2) {
+  background-color: #ec6f5d;
+  transform: matrix(-1, 1, 0, 1, 0, 0);
+  opacity: 1;
+  z-index: 2;
+  position: fixed;
+  top: 4%;
+  left: 88%;
+}
+.checkbox:checked + .burger span:nth-child(3) {
+  background-color: #ec6f5d;
+  transform: matrix(-1, -1, 0, 1, 0, 0);
+  opacity: 1;
+  z-index: 2;
+  position: fixed;
+  top: 4%;
+  left: 88%;
+}
+.checkbox:checked {
+  position: fixed;
+  top: 12px;
+  right: 20px;
+  z-index: 2;
+}
+/* ..............nav.............. */
+.gradient-body .nav-burger {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(50, 50, 100, 0.7);
+  z-index: 0;
+}
+.nav-burger {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(50, 50, 100, 0.7);
+  z-index: 0;
+}
+.nav-burger .links {
+  list-style: none;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 12px 12px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 64px 12px 12px 12px;
+  margin: 0 8px;
+}
+.nav-burger .links li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #24a3ff;
+  background-color: #f5f5fa;
+  border-radius: 12px;
+  padding: 7px 0;
+}
+
+.links > li:active {
+  background-color: #e6e6f0;
+  border-radius: 12px;
+}
+
+.nav-burger .link:hover {
+  color: #f0145a;
+  text-decoration: underline;
+}
+
+.burger + .nav-burger {
+  display: none;
+}
+.checkbox:checked ~ .nav-burger {
+  display: flex;
+  z-index: 1;
+}
+
+/* sm-устройства (больше или равно 768px) */
+@media (min-width: 576px) {
+  /* CSS для: 576px <= ширины <= 991px */
+  .container {
+    min-width: 100%;
+  }
+}
+
+/* md-устройства (больше или равно 768px) */
+@media (min-width: 768px) {
+  /* CSS для: 768px <= ширины <= 991px */
+  .container {
+    width: 100%;
+    max-width: calc(768px + 120px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .header .wrapper {
+    padding: 50px 0 60px 0;
+  }
+  .up-header {
+    padding: 0;
+    background-color: unset;
+    justify-content: left;
+    gap: 6px;
+  }
+  .up-header .contacts {
+    display: contents;
+  }
+  .dot {
+    display: initial;
+    min-width: 6px;
+    min-height: 6px;
+    background-color: #e6e6f0;
+    border-radius: 50%;
+  }
+  .contacts .adress {
+    display: initial;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .up-header .contacts svg {
+    display: block;
+  }
+  .up-header .contacts svg > path:hover {
+    color: #f0145a;
+  }
+  .logo .text-logo {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .gradient-body .logo .text-logo {
+    display: none;
+  }
+
+  /* ..............logo-burger.............. */
+
+  .logo {
+    padding: 0;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .logo img {
+    max-width: 130px;
+    max-height: 60px;
+  }
+  .logo .slash {
+    max-width: 21px;
+    max-height: 47px;
+  }
+  .logo .team {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  /* ..............burger menu.............. */
+  .burger-menu {
+    width: 100%;
+    padding: 0;
+  }
+  .checkbox,
+  .burger {
+    display: none;
+  }
+  .gradient-body .nav-burger {
+    background-color: unset;
+    display: flex;
+    position: static;
+  }
+
+  .burger + .nav-burger {
+    display: contents;
+  }
+
+  .nav-burger .links {
+    background-color: unset;
+    flex-direction: row;
+    transition: none;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-burger .links li {
+    font-size: 16px;
+    line-height: 20px;
+    background-color: unset;
+    color: unset;
+    padding: 0;
+  }
+  .checkbox:checked ~ .nav {
+    display: flex;
+    position: static;
+  }
+}
+
+/* lg-устройства (больше или равно 992px) */
+@media (min-width: 1024px) {
+  /* CSS для: 992px <= ширины <= 1119px */
+  .container {
+    width: 100%;
+    max-width: calc(1024px + 120px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .header .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .up-header {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    justify-content: end;
+  }
+  .logo {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin-top: 0;
+    margin: 0;
+  }
+  .burger-menu {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    justify-content: end;
+    align-items: flex-end;
+  }
+}
+
+/* xl-устройства (больше или равно 1200px) */
+@media (min-width: 1440px) {
+  /* CSS для: ширины >= 1200px */
+  .container {
+    width: 100%;
+    max-width: calc(1320px + 120px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+/* xxl-устройства (больше или равно 1600px) */
+@media (min-width: 1920px) {
+  /* CSS для: ширины >= 1200px */
+  .container {
+    width: 100%;
+    max-width: calc(1600px + 320px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+}

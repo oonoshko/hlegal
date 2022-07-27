@@ -1,0 +1,123 @@
+@import url(../../css/reset.css);
+@import url(../../css/global.css);
+@import url(../../css/header.css);
+@import url(../../css/footer.css);
+
+/* ..............first-screen.............. */
+.first-screen {
+  padding: 30px;
+}
+.first-screen .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 30px;
+}
+.first-screen .title {
+  font-size: 30px;
+  line-height: 37px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 30px;
+}
+
+.first-screen .card img {
+  border-radius: 12px;
+  display: block;
+}
+.text-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.name {
+  line-height: 20px;
+  color: #323264;
+}
+.card .text-card svg {
+  background: #f5f5fa;
+  padding: 9.5px 11.5px 8.5px 13.5px;
+  border-radius: 50%;
+  color: #24a3ff;
+  transform: rotate(-90deg);
+}
+.card > a:hover p {
+  color: #f0145a;
+}
+.card > a:hover svg {
+  color: #f0145a;
+}
+.position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #b3b3ba;
+  margin-top: 5px;
+}
+/* md-устройства (больше или равно 768px) */
+@media (min-width: 768px) {
+  /* CSS для: 768px <= ширины <= 991px */
+
+  /* ..............first-screen.............. */
+  .first-screen {
+    padding: 0 0 60px 0;
+  }
+  .first-screen .wrapper {
+    justify-content: space-between;
+    gap: 60px;
+  }
+  .first-screen .title {
+    font-size: 38px;
+    line-height: 46px;
+    margin-bottom: 60px;
+  }
+  .first-screen .card img {
+    max-width: 294px;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
+/* lg-устройства (больше или равно 992px) */
+@media (min-width: 1024px) {
+  /* CSS для: 992px <= ширины <= 1119px */
+
+  /* ..............first-screen.............. */
+  .first-screen .wrapper {
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  .first-screen .title {
+    margin: 0 120px 60px 120px;
+  }
+
+  .first-screen .card img {
+    max-width: 261px;
+  }
+}
+
+/* xl-устройства (больше или равно 1200px) */
+@media (min-width: 1440px) {
+  /* CSS для: ширины >= 1200px */
+
+  .first-screen .title {
+    margin: 0 120px 60px 120px;
+  }
+
+  .first-screen .card img {
+    max-width: 400px;
+  }
+}
+/* xxl-устройства (больше или равно 1600px) */
+@media (min-width: 1920px) {
+  /* CSS для: ширины >= 1200px */
+
+  .first-screen .card img {
+    min-width: 493px;
+  }
+}

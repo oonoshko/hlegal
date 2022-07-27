@@ -1,0 +1,156 @@
+/* ..............footer.............. */
+.footer-line .footer .container::before {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #e6e6f0;
+  margin: 0 30px 30px 30px;
+}
+
+.footer {
+  padding: 30px 0;
+}
+.footer .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.adress-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.adress-footer .adress {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
+}
+.adress-footer .map {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24a3ff;
+}
+.footer .contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 20px;
+  gap: 10px;
+}
+.footer .contacts svg {
+  color: #24a3ff;
+  display: block;
+}
+.footer .contacts svg:hover {
+  color: #f0145a;
+}
+.footer .contacts .tel {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  color: #46466e;
+}
+.footer .contacts .mail {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24a3ff;
+}
+.footer .contacts .mail:hover {
+  color: #f0145a;
+}
+.footer .copyright {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #b3b3ba;
+  margin-bottom: 0;
+}
+
+/* md-устройства (больше или равно 768px) */
+@media (min-width: 768px) {
+  /* CSS для: 768px <= ширины <= 991px */
+
+  .footer-line .footer .container::before {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #e6e6f0;
+    margin: 0 0 30px 0;
+  }
+  .footer-line .footer .wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: initial;
+    gap: 30px;
+    margin-left: 0;
+  }
+
+  .footer .wrapper {
+    margin-left: 125px;
+    justify-content: flex-start;
+    align-items: initial;
+  }
+
+  .adress-footer {
+    flex-direction: row;
+  }
+
+  .adress-footer .adress {
+    margin-bottom: 0;
+  }
+
+  .footer .contacts {
+    flex-direction: row;
+  }
+  .footer-line .footer .contacts {
+    flex-direction: row;
+    order: 1;
+    width: 100%;
+  }
+
+  .footer .copyright {
+    text-align: left;
+    margin-left: 61px;
+  }
+  .footer-line .footer .copyright {
+    margin-bottom: 0;
+    margin-left: 0;
+    text-align: left;
+    order: 0;
+  }
+}
+
+/* lg-устройства (больше или равно 992px) */
+@media (min-width: 1024px) {
+  /* CSS для: 992px <= ширины <= 1119px */
+
+  .footer .wrapper {
+    margin-left: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer .contacts {
+    margin: 0;
+    order: 1;
+    width: 100%;
+  }
+  .footer .copyright {
+    order: 0;
+    margin-left: 0;
+  }
+}
