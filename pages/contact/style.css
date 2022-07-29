@@ -1,0 +1,214 @@
+@import url(../../css/reset.css);
+@import url(../../css/global.css);
+@import url(../../css/header.css);
+@import url(../../css/footer.css);
+
+/* ..............contacts-form.............. */
+.contacts-form {
+  padding: 30px;
+  background-color: #ffffff;
+}
+.contacts-form .wrapper {
+  gap: 30px;
+}
+
+/* ..............up-content.............. */
+.up-content {
+  width: 100%;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  color: #323264;
+  gap: 30px;
+}
+.up-content .address::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  align-self: stretch;
+  background-color: #e6e6f0;
+  margin-top: 30px;
+}
+.up-content .tel-mail {
+  gap: 15px;
+}
+.up-content .tel-mail::after {
+  content: "";
+  display: block;
+  min-width: 100%;
+  height: 4px;
+  align-self: stretch;
+  background-color: #e6e6f0;
+  margin-top: 30px;
+}
+.up-content .mail {
+  min-width: 100%;
+  justify-content: flex-start;
+  color: #24a3ff;
+}
+
+.up-content svg,
+.up-content .text {
+  display: block;
+  color: #24a3ff;
+}
+.fb-text svg:hover {
+  color: #f0145a;
+}
+.fb-text {
+  gap: 10px;
+}
+.fb-text .text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ..............down-content.............. */
+.down-content {
+  width: 100%;
+  background: #f5f5fa;
+  border-radius: 12px;
+  padding: 30px;
+  gap: 30px;
+}
+.down-content .title {
+  font-size: 30px;
+  line-height: 37px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.forms-up {
+  gap: 15px;
+}
+input[placeholder],
+textarea {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  width: 100%;
+  padding: 15px 0 15px 15px;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+form:hover .text-form {
+  border: 1px solid #24a3ff;
+  color: #000000;
+}
+form:focus .text-form {
+  border: 1px solid #24a3ff;
+  color: #000000;
+}
+form:invalid .text-form {
+  border: 1px solid #ff0000;
+  color: #ff0000;
+}
+.down-content .message {
+  resize: none;
+  padding: 15px 0 0 15px;
+  min-height: 130px;
+  margin-bottom: 30px;
+}
+::placeholder {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #b3b3ba;
+}
+
+/* ........................................ */
+.forms-up h3 {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #b3b3ba;
+  margin-bottom: 15px;
+}
+.btn {
+  width: 100%;
+  font: inherit;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+}
+.btn-blue {
+  max-width: 100%;
+  background-color: #24a3ff;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  padding: 18px 66px;
+  margin-top: 15px;
+}
+.btn-blue:hover {
+  background-color: #0085ff;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+}
+.btn-blue:active {
+  background-color: #006ccf;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+}
+
+/* md-устройства (больше или равно 768px) */
+@media (min-width: 768px) {
+  /* CSS для: 768px <= ширины <= 991px */
+
+  /* ..............contacts-form.............. */
+  .contacts-form {
+    padding: 0 0 60px 0;
+  }
+}
+
+/* lg-устройства (больше или равно 992px) */
+@media (min-width: 1024px) {
+  /* CSS для: 992px <= ширины <= 1119px */
+
+  /* ..............contacts-form.............. */
+  .contacts-form .wrapper {
+    gap: 60px;
+    flex-direction: row;
+  }
+  .up-content {
+    min-width: 422px;
+  }
+  .down-content {
+    min-width: 422px;
+  }
+}
+
+/* xl-устройства (больше или равно 1200px) */
+@media (min-width: 1440px) {
+  /* CSS для: ширины >= 1200px */
+
+  .up-content {
+    margin-left: 120px;
+    max-width: 510px;
+  }
+  .down-content {
+    margin-right: 120px;
+    max-width: 510px;
+  }
+}
+
+/* xxl-устройства (больше или равно 1600px) */
+@media (min-width: 1920px) {
+  /* CSS для: ширины >= 1200px */
+
+  .up-content {
+    min-width: 650px;
+  }
+  .down-content {
+    min-width: 650px;
+  }
+}
