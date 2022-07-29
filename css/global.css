@@ -24,7 +24,7 @@
     #323264 57.17%,
     #643e72 87.46%
   );
-  border-radius: 0px 0px 12px 12px;
+  border-radius: 0 0 12px 12px;
   color: #ffffff;
 }
 .gradient-line {
@@ -90,4 +90,25 @@
   background-clip: text;
   text-fill-color: transparent;
   margin-bottom: 0;
+}
+.btn {
+  font: inherit;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.btn-blue {
+  background-color: #24a3ff;
+  color: #ffffff;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  padding: 18px 30px;
+  border: none;
+  margin-bottom: 30px;
+}
+.btn-blue:hover {
+  background-color: #0085ff;
+}
+.btn-blue:active {
+  background-color: #006ccf;
 }

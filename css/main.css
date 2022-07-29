@@ -26,16 +26,6 @@
 }
 
 /* ...................tabs................... */
-.tabs .tabs-nav {
-  display: flex;
-  flex-direction: row;
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 37px;
-  border: none;
-  color: #b3b3ba;
-}
 
 /* ............card-service................. */
 .card-service {

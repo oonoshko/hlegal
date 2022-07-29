@@ -16,6 +16,12 @@
   align-items: center;
   gap: 25px;
 }
+.footer .wrapper125 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
 .adress-footer {
   display: flex;
   flex-direction: column;
@@ -104,6 +110,11 @@
     justify-content: flex-start;
     align-items: initial;
   }
+  .footer .wrapper125 {
+    margin-left: 125px;
+    justify-content: flex-start;
+    align-items: initial;
+  }
 
   .adress-footer {
     flex-direction: row;
@@ -116,13 +127,17 @@
   .footer .contacts {
     flex-direction: row;
   }
-  .footer-line .footer .contacts {
+  .footer-line .footer .wrapper .contacts {
     flex-direction: row;
     order: 1;
     width: 100%;
   }
+  .footer-line .wrapper125 .contacts {
+    flex-direction: row;
+    /* width: 100%; */
+  }
 
-  .footer .copyright {
+  .footer .wrapper .copyright {
     text-align: left;
     margin-left: 61px;
   }
@@ -132,6 +147,12 @@
     text-align: left;
     order: 0;
   }
+  .footer-line .wrapper125 .copyright {
+    margin-bottom: 0;
+    margin-left: 0;
+    text-align: left;
+    margin-left: 61px;
+  }
 }
 
 /* lg-устройства (больше или равно 992px) */
@@ -139,6 +160,12 @@
   /* CSS для: 992px <= ширины <= 1119px */
 
   .footer .wrapper {
+    margin-left: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer .wrapper125 {
     margin-left: 0;
     flex-direction: row;
     flex-wrap: wrap;
