@@ -1,0 +1,132 @@
+@import url(../../css/reset.css);
+@import url(../../css/global.css);
+@import url(../../css/header.css);
+@import url(../../css/footer.css);
+
+/* ..............first-screen.............. */
+.team-section {
+  padding: 30px 30px 60px 30px;
+}
+.team-section .wrapper-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.team-section .title {
+  font-size: 30px;
+  line-height: 37px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 30px;
+}
+.team-section .card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+}
+.img-wrapper {
+  height: 300px;
+}
+
+.team-section .card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  display: inline-block;
+}
+.text-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.name {
+  line-height: 20px;
+  color: #323264;
+}
+.card .text-card svg {
+  background: #f5f5fa;
+  padding: 9.5px 11.5px 8.5px 13.5px;
+  border-radius: 50%;
+  color: #24a3ff;
+  transform: rotate(-90deg);
+}
+.card > a:hover p {
+  color: #f0145a;
+}
+.card > a:hover svg {
+  color: #f0145a;
+}
+.position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #b3b3ba;
+  margin-top: 5px;
+}
+/* md-устройства (больше или равно 768px) */
+@media (min-width: 768px) {
+  /* CSS для: 768px <= ширины <= 991px */
+
+  /* ..............first-screen.............. */
+  .team-section {
+    padding: 0 0 60px 0;
+  }
+
+  .team-section .wrapper-card {
+    gap: 60px;
+  }
+  .team-section .title {
+    font-size: 38px;
+    line-height: 46px;
+    margin-bottom: 60px;
+  }
+  .team-section .card {
+    max-width: 45.31%;
+  }
+  .img-wrapper {
+    height: 400px;
+  }
+  .team-section .card img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* lg-устройства (больше или равно 992px) */
+@media (min-width: 1024px) {
+  /* CSS для: 992px <= ширины <= 1119px */
+
+  .team-section .title {
+    margin: 0 120px 60px 120px;
+  }
+
+  .team-section .card {
+    max-width: 28.87%;
+  }
+}
+
+/* xl-устройства (больше или равно 1200px) */
+@media (min-width: 1440px) {
+  /* CSS для: ширины >= 1200px */
+
+  .team-section .title {
+    margin: 0 120px 60px 120px;
+  }
+
+  .team-section .card {
+    max-width: 30.3%;
+  }
+}
+/* xxl-устройства (больше или равно 1600px) */
+@media (min-width: 1920px) {
+  /* CSS для: ширины >= 1200px */
+
+  .team-section .card {
+    max-width: 30.83%;
+  }
+}
