@@ -338,6 +338,11 @@
     display: flex;
     position: static;
   }
+  .nav-burger {
+    background-color: unset;
+    display: flex;
+    position: static;
+  }
 
   .burger + .nav-burger {
     display: contents;
