@@ -55,12 +55,14 @@
   color: #24a3ff;
   transform: rotate(-90deg);
 }
-.card > a:hover p {
+
+.card a:hover svg {
   color: #f0145a;
 }
-.card > a:hover svg {
+.card:hover p.name {
   color: #f0145a;
 }
+
 .position {
   font-weight: 400;
   font-size: 14px;

@@ -14,6 +14,7 @@
 }
 .gradient-body .up-header {
   width: 100%;
+  background-color: rgba(245, 245, 250, 0.2);
   justify-content: space-between;
   align-items: center;
   padding: 10px 15px;
@@ -44,6 +45,10 @@
 .language {
   padding: 5px 7px;
   cursor: pointer;
+}
+.form-languages input:hover + .language {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
 }
 .form-languages input:focus ~ .language {
   background-color: #f0145a;
@@ -160,19 +165,19 @@
   background-color: #ec6f5d;
   transform: matrix(-1, 1, 0, 1, 0, 0);
   opacity: 1;
-  z-index: 2;
-  position: fixed;
-  top: 4%;
-  left: 88%;
+  z-index: 3;
+  position: absolute;
+  top: -90%;
+  left: 14%;
 }
 .checkbox:checked + .burger span:nth-child(3) {
   background-color: #ec6f5d;
   transform: matrix(-1, -1, 0, 1, 0, 0);
   opacity: 1;
-  z-index: 2;
-  position: fixed;
-  top: 4%;
-  left: 88%;
+  z-index: 3;
+  position: absolute;
+  top: -90%;
+  left: 14%;
 }
 .checkbox:checked {
   position: fixed;
@@ -253,7 +258,6 @@
     padding-left: 60px;
     padding-right: 60px;
   }
-
   .header .wrapper {
     padding: 50px 0 60px 0;
   }
@@ -279,6 +283,13 @@
     background-color: #e6e6f0;
     border-radius: 50%;
   }
+  .gradient-body .contacts .adress {
+    display: initial;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    color: #b3b3ba;
+  }
   .contacts .adress {
     display: initial;
     font-family: "Montserrat", sans-serif;
@@ -295,8 +306,14 @@
     font-size: 36px;
     line-height: 44px;
   }
+  .gradient-body .logo .slash {
+    display: none;
+  }
   .gradient-body .logo .text-logo {
     display: none;
+  }
+  .gradient .logo .slash {
+    display: block;
   }
   .gradient .logo .text-logo {
     display: contents;
@@ -328,6 +345,7 @@
   .burger-menu {
     width: 100%;
     padding: 0;
+    z-index: 1;
   }
   .checkbox,
   .burger {
@@ -390,6 +408,7 @@
     grid-column: 2/4;
     grid-row: 1/2;
     justify-content: flex-end;
+    z-index: 1;
   }
   .up-header {
     grid-column: 2/4;

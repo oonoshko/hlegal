@@ -3,18 +3,16 @@
 @import url(header.css);
 @import url(footer.css);
 
-/* ......................... */
-
 /* ...............first-screen.............. */
 .first-screen {
   min-height: 100vh;
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   background: url("../images/top.png") no-repeat center/contain;
-  /* position: relative;
-  top: calc(50% - 600px / 2);
-  left: calc(50% - 523.4px / 2 + 0.2px);
-  width: 132%; */
+  background-size: 144% 100%;
 }
 
 .first-screen h1 {
@@ -22,11 +20,98 @@
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
-  margin-bottom: 0;
+  margin: 231px 30px 0 30px;
+}
+.arrow-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.arrow {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #b3b3ba;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 159px 0 30px 0;
+}
+.arrow:hover {
+  border-color: #f0145a;
+}
+.arrow svg:hover > path {
+  stroke: #f0145a;
 }
 
 /* ...................tabs................... */
+.tabs {
+  padding: 30px 30px 0 30px;
+}
+.tabs-wrapper .nav {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-bottom: 30px;
+  gap: 30px;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
 
+.tabs-wrapper .nav::-webkit-scrollbar {
+  height: 4px;
+}
+.tabs-wrapper .nav::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.tabs-wrapper .nav::-webkit-scrollbar-thumb {
+  border-radius: 300px;
+  border: 6px solid #b3b3ba;
+}
+.tabs-wrapper .tab-content {
+  flex-direction: column;
+}
+.tabs-nav {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #b3b3ba;
+  text-align: right;
+  background-color: transparent;
+  border: none;
+}
+.tabs-nav:hover {
+  color: #f0145a;
+}
+
+.tabs-nav:focus {
+  background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#v-pills-home-tab.active {
+  background: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tabs-nav-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 24px;
+}
+.tabs-nav-text ~ p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  margin-bottom: 0;
+}
 /* ............card-service................. */
 .card-service {
   padding: 30px 30px 60px 30px;
@@ -292,6 +377,33 @@
 @media (min-width: 768px) {
   /* CSS для: 768px <= ширины <= 991px */
 
+  /* ...............first-screen.............. */
+  .first-screen {
+    min-height: 180.3vh;
+    background-size: 117% 100%;
+  }
+
+  .first-screen h1 {
+    margin: 489px 0 0 0;
+  }
+  .arrow {
+    margin: 417px 0 30px 0;
+  }
+
+  /* ...................tabs................... */
+  .tabs {
+    padding: 60px 0 0 0;
+  }
+
+  .tabs-nav {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .tabs-nav-text {
+    margin-top: 60px;
+    font-size: 30px;
+    line-height: 37px;
+  }
   /* ............card-service................. */
   .card-service {
     padding: 60px 0;
@@ -395,6 +507,42 @@
 @media (min-width: 1024px) {
   /* CSS для: 992px <= ширины <= 1119px */
 
+  /* ...............first-screen.............. */
+  .first-screen {
+    min-height: 101.3vh;
+    background-size: 65% 100%;
+  }
+
+  .first-screen h1 {
+    margin: 361px 0 0 0;
+  }
+  .arrow {
+    margin: 289px 0 30px 0;
+  }
+
+  /* ...................tabs................... */
+
+  .tabs-wrapper {
+    display: flex;
+  }
+  .tabs-wrapper .nav {
+    flex-direction: column;
+    border-right: 4px solid rgba(255, 255, 255, 0.3);
+    margin-right: 60px;
+    padding-right: 60px;
+    padding-bottom: 0;
+    width: 49%;
+    overflow: hidden;
+    align-items: flex-end;
+  }
+
+  .tabs-wrapper .tab-content {
+    width: 45%;
+  }
+  .tabs-nav-text {
+    margin-top: 0;
+  }
+
   /* ............card-service................. */
   .card-service .text-down-card {
     max-width: 28.88%;
@@ -439,6 +587,29 @@
 @media (min-width: 1440px) {
   /* CSS для: ширины >= 1200px */
 
+  /* ...............first-screen.............. */
+  .first-screen {
+    min-height: 98.4vh;
+    background-size: 48% 100%;
+  }
+
+  .first-screen h1 {
+    margin: 377px 0 0 0;
+  }
+  .arrow {
+    margin: 305px 0 30px 0;
+  }
+
+  /* ...................tabs................... */
+  .tabs-wrapper .nav {
+    width: 42%;
+  }
+  .tabs-wrapper .tab-content {
+    width: 42%;
+  }
+  .tabs-nav-text {
+    margin-top: 43px;
+  }
   /* ............card-service................. */
   .card-service .text-down-card {
     max-width: 30.3%;
@@ -467,6 +638,29 @@
 @media (min-width: 1920px) {
   /* CSS для: ширины >= 1200px */
 
+  /* ...............first-screen.............. */
+  .first-screen {
+    min-height: 87.9vh;
+    background-size: 46% 100%;
+  }
+
+  .first-screen h1 {
+    margin: 477px 0 0 0;
+  }
+  .arrow {
+    margin: 405px 0 30px 0;
+  }
+
+  /* ...................tabs................... */
+  .tabs-wrapper .nav {
+    width: 35%;
+  }
+  .tabs-wrapper .tab-content {
+    width: 54%;
+  }
+  .tabs-nav-text {
+    margin-top: 73px;
+  }
   /* ............card-service................. */
   .card-service .text-down-card {
     max-width: 30.82%;

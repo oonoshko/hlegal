@@ -1,96 +1,68 @@
-@import url(../../css/reset.css);
-@import url(../../css/global.css);
-@import url(../../css/header.css);
-@import url(../../css/footer.css);
+@import url(../../../css/reset.css);
+@import url(../../../css/global.css);
+@import url(../../../css/header.css);
+@import url(../../../css/footer.css);
 
-/* ............card-service................. */
-.card-service-wrapper {
-  margin-top: 132px;
+/* .............gdpr-section................ */
+.gdpr-wrapper .underTitle {
+  line-height: 20px;
+  color: #46466e;
+  margin-bottom: 15px;
 }
-.text-down-wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  text-align: center;
-  gap: 30px;
-}
-.text-down-card {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-  padding: 0 30px;
-}
-
-.text-down-card img {
-  background-color: #ffffff;
-  border-radius: 24px;
-  padding: 14px;
-  width: 64px;
-  height: 64px;
-}
-
-.text-down-card h4 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 37px;
-  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  /* margin-bottom: 15px; */
-}
-.text-down-card h4:hover {
-  color: #f0145a;
-}
-.text-down-card .description {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 19px;
-  line-height: 30px;
-}
-
-.btn-line {
-  width: 100%;
-  border-bottom: 4px solid rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-}
-
-.service-area {
-  text-align: left;
-  padding: 0 30px;
-  margin-bottom: 60px;
-}
-.service-area h3 {
-  font-size: 22px;
-  line-height: 27px;
-  margin-bottom: 30px;
-}
-
-::marker {
-  color: #f0145a;
-}
-.service-area ul {
+.gdpr-wrapper .result-block li {
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
+  color: #000000;
   margin-left: 30px;
-}
-
-.service-area li + li {
   margin-top: 15px;
 }
 
-.white {
-  background-color: #ffffff;
-  padding-bottom: 80px;
+::marker {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #f0145a;
+}
+
+.gdpr-wrapper figure {
+  width: 100%;
+  display: block;
+}
+.gdpr-wrapper figcaption {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #b3b3ba;
+  margin-top: 15px;
+}
+.gdpr-wrapper .underBlock {
+  padding-bottom: 30px;
+  border-bottom: 4px solid #e6e6f0;
+}
+.social-icon {
+  display: flex;
+  gap: 10px;
+}
+.social-icon .svg-wrapper {
+  width: 42px;
+  height: 42px;
+  background-color: #f5f5fa;
+  border-radius: 12px;
+  padding: 10px 9px;
+}
+.social-icon .svg-wrapper:hover {
+  background-color: #ededf7;
 }
 
 /* ..........card-publications.............. */
 .card-publications {
-  background-color: #f5f5fa;
   padding: 30px 30px 0 30px;
+}
+.gdpr-section {
+  background-color: #ffffff;
+  padding: 0 30px 60px 30px;
 }
 
 .card-publications .card-publications-wrapper {
@@ -99,18 +71,24 @@
   gap: 30px;
 }
 
-.publications-down-wrapper {
+.publications-down-wrapper,
+.gdpr-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.publications-down {
+.publications-down,
+.gdpr-wrapper {
   background-color: #ffffff;
   min-height: max-content;
   border-radius: 8px;
 }
-.img-wrapper {
+.publications-down .img-wrapper {
   height: 200px;
+}
+.gdpr-wrapper .img-wrapper {
+  width: 100%;
+  height: 300px;
 }
 .img-wrapper img {
   display: block;
@@ -119,31 +97,35 @@
   height: 100%;
   object-fit: cover;
 }
+.gdpr-wrapper .img-wrapper img {
+  border-radius: 8px;
+}
 
 .card-publications .card-text {
   margin: 30px;
 }
 .card-publications .card-publications-wrapper h4 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
   line-height: 20px;
   color: #24a3ff;
+  margin-bottom: 15px;
+}
+.gdpr-wrapper .card-text h4 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #323264;
   margin-bottom: 15px;
 }
 .card-publications .card-publications-wrapper h4:hover {
   color: #f0145a;
 }
 
-.card-publications .data {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+.card-publications .data,
+.gdpr-wrapper .data {
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #b3b3ba;
-  margin-bottom: 0;
 }
 .card-publications .card-publications-wrapper .data::after {
   content: "";
@@ -153,36 +135,49 @@
   background-color: #e6e6f0;
   margin: 15px 0;
 }
+
+.gdpr-wrapper .data::after {
+  content: "";
+  display: block;
+  min-width: 255px;
+  height: 4px;
+  background-color: #e6e6f0;
+  margin: 30px 0;
+}
 .card-publications .card-publications-wrapper .description {
-  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #000000;
-  margin-bottom: 0;
+}
+.gdpr-wrapper .description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
 }
 
 /* md-устройства (больше или равно 768px) */
 @media (min-width: 768px) {
   /* CSS для: 768px <= ширины <= 991px */
 
-  /* ............card-service................. */
-
-  .text-down-card {
-    padding: 0;
+  /* .............gdpr-section................ */
+  .gdpr-section {
+    padding: 0 0 60px 0;
   }
-  .card-service-wrapper {
-    margin-top: 280px;
-    gap: 60px;
+  .gdpr-wrapper .img-wrapper {
+    height: 500px;
   }
-  .btn-blue {
-    margin-bottom: 60px;
+  .gdpr-wrapper .card-text h4 {
+    font-size: 30px;
+    line-height: 37px;
   }
-  .service-area {
-    padding: 0 0;
+  .gdpr-wrapper .underTitle {
+    font-size: 22px;
+    line-height: 27px;
   }
-  .service-area ul {
-    column-count: 2;
+  .gdpr-wrapper figure {
+    margin: 0 4px;
   }
 
   /* ..........card-publications.............. */
@@ -195,10 +190,12 @@
     flex-wrap: wrap;
   }
 
-  .card-publications .card-publications-wrapper h3 {
+  .card-publications .card-publications-wrapper h3,
+  .gdpr-wrapper h1 {
     font-size: 38px;
     line-height: 46px;
   }
+
   .publications-down {
     max-width: 47.68%;
   }
@@ -212,10 +209,12 @@
 @media (min-width: 1024px) {
   /* CSS для: 992px <= ширины <= 1119px */
 
-  /* ............card-service................. */
-
-  .card-service-wrapper {
-    margin-top: 176px;
+  /* .............gdpr-section................ */
+  .gdpr-wrapper .img-wrapper {
+    height: 500px;
+  }
+  .gdpr-wrapper figure {
+    margin: 0 132px;
   }
 
   /* ..........card-publications.............. */
@@ -240,9 +239,12 @@
 @media (min-width: 1440px) {
   /* CSS для: ширины >= 1200px */
 
-  /* ............card-service................. */
-  .text-down-wrapper {
+  /* .............gdpr-section................ */
+  .gdpr-wrapper {
     margin: 0 120px;
+  }
+  .gdpr-wrapper figure {
+    margin: 0 220px;
   }
 
   /* ..........card-publications.............. */
@@ -255,10 +257,10 @@
 @media (min-width: 1920px) {
   /* CSS для: ширины >= 1200px */
 
-  /* ............card-service................. */
-  /* .card-service .text-down-card {
-    max-width: 30.82%;
-  } */
+  /* .............gdpr-section................ */
+  .gdpr-wrapper figure {
+    margin: 0 360px;
+  }
 
   /* ..........card-publications.............. */
   .publications-down {

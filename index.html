@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="./assets/slick/slick-theme.css">
     <link rel="stylesheet" href="./assets/bootstrap-5.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.css">
+    <script>
+        function scrollToElem(elem) {
+            event.preventDefault()
+            const target = document.querySelector(elem.hash)
+            window.scrollTo({
+                top: target.offsetTop,
+                behavior: "smooth"
+            })
+        }
+    </script>
 </head>
 
 <body class="flex flex-col min-h-screen gradient-body footer-line">
@@ -73,17 +83,18 @@
                     <nav class="nav-burger">
                         <ul class="links">
                             <li><a href="#" class="link background">about us</a></li>
-                            <li><a href="#" class="link background">services</a></li>
+                            <li><a href="./pages/services/" class="link background" target="_blank"
+                                    rel="noopener noreferrer">services</a></li>
                             <li><a href="./pages/team/" class="link background" target="_blank"
                                     rel="noopener noreferrer">team</a></li>
-                            <li><a href="#" class="link background">publications</a></li>
+                            <li><a href="./pages/publicaton/" class="link background" target="_blank"
+                                    rel="noopener noreferrer">publications</a></li>
                             <li><a href="./pages/contact/" class="link background" target="_blank"
                                     rel="noopener noreferrer">contact</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
-
         </div>
     </header>
     <main class="flex-1">
@@ -91,8 +102,84 @@
             <div class="first-screen text-center">
                 <div class="container">
                     <h1>you legal solutions provider</h1>
+                    <div class="arrow-wrapper">
+                        <div class="arrow">
+                            <a href="#publication" onclick="scrollToElem(this)">
+                                <svg width="20" height="12" viewBox="0 0 20 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L10 10L19 1" stroke="white" stroke-width="2" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <section class="tabs">
+                <div class="container">
+                    <div class="tabs-wrapper">
+                        <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="tabs-nav active" id="v-pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                                aria-selected="true">Consistent</button>
+                            <button class="tabs-nav" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-profile" type="button" role="tab"
+                                aria-controls="v-pills-profile" aria-selected="false">Customer
+                                oriented</button>
+                            <button class="tabs-nav" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-messages" type="button" role="tab"
+                                aria-controls="v-pills-messages" aria-selected="false">Innovative</button>
+                            <button class="tabs-nav" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-settings" type="button" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false">Business oriented</button>
+                        </div>
+                        <div class="tab-content flex flex-col justify-center" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                aria-labelledby="v-pills-home-tab">
+                                <h3 class="tabs-nav-text">
+                                    We turn the idea of legal services
+                                </h3>
+                                <p>
+                                    Consolidating many years of experience and practice, the company's lawyers accompany
+                                    complex projects and achieve a number of important decisions for the industry. Many
+                                    of them form the practice of applying the law of the sea in Ukraine.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                aria-labelledby="v-pills-profile-tab">
+                                <h3 class="tabs-nav-text">
+                                    Comprehensive daily legal support
+                                </h3>
+                                <p>
+                                    In addition, over time, the work will become the same type and uninteresting for a
+                                    full-time lawyer. And we know very well how difficult it is to find a good candidate
+                                    with experience in the field of information technology in Ukraine.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                aria-labelledby="v-pills-messages-tab">
+                                <h3 class="tabs-nav-text">
+                                    Building contractual relations
+                                </h3>
+                                <p>
+                                    Is it a small, medium-sized company or a market leader? Local business or
+                                    multinational company? Do you have your own legal department or not?
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab">
+                                <h3 class="tabs-nav-text">
+                                    Judicial representation
+                                </h3>
+                                <p>
+                                    Once a week, or week after month, you have your own lawyer by your side. Anyone in
+                                    the company can catch it at the coffee maker and just talk about current affairs
+                                    instead of waiting for update status.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="card-service gradient-line">
                 <div class="container">
                     <div class="card-service-wrapper">
@@ -109,7 +196,7 @@
                             <div class="text-down-card">
                                 <img src="./images/Ecommerce.png" alt="picture">
                                 <div class="card-text">
-                                    <a href="./pages/serviceEntry/" target="_blank" rel="noopener noreferrer">
+                                    <a href="./pages/services/serviceEntry/" target="_blank" rel="noopener noreferrer">
                                         <h4>IT and e-commerce</h4>
                                     </a>
                                     <p class="description">An endless stream of contracts, tax issues, labor relations,
@@ -125,10 +212,9 @@
                                         <h4>Comprehensive daily legal support</h4>
                                     </a>
                                     <p class="description">In addition, over time, the work will become the same type
-                                        and uninteresting
-                                        for a full-time lawyer. And we know very well how difficult it is to find a
-                                        good candidate with experience in the field of information technology in
-                                        Ukraine.
+                                        and uninteresting for a full-time lawyer. And we know very well how difficult it
+                                        is to find a good candidate with experience in the field of information
+                                        technology in Ukraine.
                                     </p>
                                 </div>
                             </div>
@@ -139,8 +225,7 @@
                                         <h4>Structuring corporate relationships</h4>
                                     </a>
                                     <p class="description">Instead of just providing legal services, we will hire a
-                                        lawyer or a whole
-                                        team that will fit into the daily life of your company.
+                                        lawyer or a whole team that will fit into the daily life of your company.
                                     </p>
                                 </div>
                             </div>
@@ -164,9 +249,8 @@
                                         <h4>Protection of business, intellectual property</h4>
                                     </a>
                                     <p class="description">And all the other time he will work on new diverse projects,
-                                        so he will
-                                        definitely not stop in professional development. One way or another, all
-                                        Axon Partners will work for you instead of a corporate lawyer.
+                                        so he will definitely not stop in professional development. One way or another,
+                                        all Axon Partners will work for you instead of a corporate lawyer.
                                     </p>
                                 </div>
                             </div>
@@ -177,8 +261,7 @@
                                         <h4>Judicial representation</h4>
                                     </a>
                                     <p class="description">Is it a small, medium-sized company or a market leader? Local
-                                        business or
-                                        multinational company? Do you have your own legal department or not?
+                                        business or multinational company? Do you have your own legal department or not?
                                     </p>
                                 </div>
                             </div>
@@ -285,7 +368,7 @@
                 </div>
             </div>
         </section>
-        <section class="card-publications">
+        <section id="publication" class="card-publications">
             <div class="container">
                 <div class="card-publications-wrapper">
                     <div class="flex flex-col">
@@ -317,10 +400,9 @@
                                 <img src="./images/gdpr.jpg" alt="picture">
                             </div>
                             <div class="card-text">
-                                <a href="#">
+                                <a href="./pages/publicaton/publicationEnty/" target="_blank" rel="noopener noreferrer">
                                     <h4>Penalty for the Good Corporation: what will happen to Google and others
-                                        for
-                                        violating the GDPR</h4>
+                                        for violating the GDPR</h4>
                                 </a>
                                 <p class="data">September 29</p>
                                 <p class="description">
