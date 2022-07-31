@@ -78,6 +78,9 @@
   color: #24a3ff;
   margin-bottom: 5px;
 }
+.card-title:hover {
+  color: #f0145a;
+}
 
 .title {
   font-family: "Montserrat", sans-serif;

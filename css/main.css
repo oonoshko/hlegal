@@ -5,14 +5,14 @@
 
 /* ...............first-screen.............. */
 .first-screen {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: url("../images/top.png") no-repeat center/contain;
-  background-size: 141%;
+  background-size: 141% 100%;
 }
 
 .first-screen h1 {
@@ -302,7 +302,6 @@
 
 /* ..........card-publications.............. */
 .card-publications {
-  background-color: #f5f5fa;
   padding: 30px 30px 0 30px;
 }
 
@@ -381,7 +380,7 @@
 
   /* ...............first-screen.............. */
   .first-screen {
-    background-size: 117%;
+    background-size: 117% 100%;
   }
 
   .first-screen h1 {
@@ -516,7 +515,7 @@
 
   /* ...............first-screen.............. */
   .first-screen {
-    background-size: 65%;
+    background-size: 65% 100%;
   }
 
   .first-screen h1 {
@@ -598,7 +597,7 @@
 
   /* ...............first-screen.............. */
   .first-screen {
-    background-size: 48%;
+    background-size: 48% 100%;
   }
 
   .first-screen h1 {
@@ -648,7 +647,7 @@
 
   /* ...............first-screen.............. */
   .first-screen {
-    background-size: 46%;
+    background-size: 46% 100%;
   }
 
   .first-screen h1 {

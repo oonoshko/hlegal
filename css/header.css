@@ -165,7 +165,7 @@
   background-color: #ec6f5d;
   transform: matrix(-1, 1, 0, 1, 0, 0);
   opacity: 1;
-  z-index: 3;
+  z-index: 4;
   position: absolute;
   top: -90%;
   left: 14%;
@@ -174,7 +174,7 @@
   background-color: #ec6f5d;
   transform: matrix(-1, -1, 0, 1, 0, 0);
   opacity: 1;
-  z-index: 3;
+  z-index: 4;
   position: absolute;
   top: -90%;
   left: 14%;
@@ -183,7 +183,7 @@
   position: fixed;
   top: 12px;
   right: 20px;
-  z-index: 2;
+  z-index: 4;
 }
 /* ..............nav.............. */
 .gradient-body .nav-burger {
@@ -236,7 +236,7 @@
 }
 .checkbox:checked ~ .nav-burger {
   display: flex;
-  z-index: 1;
+  z-index: 3;
 }
 
 /* sm-устройства (больше или равно 768px) */
