@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   background: url("../images/top.png") no-repeat center/contain;
-  background-size: 144% 100%;
+  background-size: 141%;
 }
 
 .first-screen h1 {
@@ -45,7 +45,7 @@
 
 /* ...................tabs................... */
 .tabs {
-  padding: 30px 30px 0 30px;
+  padding: 30px 0 0 30px;
 }
 .tabs-wrapper .nav {
   flex-direction: row;
@@ -96,7 +96,9 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-
+.tabs-wrapper .tab-content {
+  padding-right: 30px;
+}
 .tabs-nav-text {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -379,8 +381,7 @@
 
   /* ...............first-screen.............. */
   .first-screen {
-    min-height: 180.3vh;
-    background-size: 117% 100%;
+    background-size: 117%;
   }
 
   .first-screen h1 {
@@ -394,10 +395,16 @@
   .tabs {
     padding: 60px 0 0 0;
   }
+  .tabs .container {
+    padding-right: 0;
+  }
 
   .tabs-nav {
     font-size: 38px;
     line-height: 46px;
+  }
+  .tabs-wrapper .tab-content {
+    padding-right: 60px;
   }
   .tabs-nav-text {
     margin-top: 60px;
@@ -509,8 +516,7 @@
 
   /* ...............first-screen.............. */
   .first-screen {
-    min-height: 101.3vh;
-    background-size: 65% 100%;
+    background-size: 65%;
   }
 
   .first-screen h1 {
@@ -521,7 +527,9 @@
   }
 
   /* ...................tabs................... */
-
+  .tabs .container {
+    padding-right: 60px;
+  }
   .tabs-wrapper {
     display: flex;
   }
@@ -537,7 +545,8 @@
   }
 
   .tabs-wrapper .tab-content {
-    width: 45%;
+    width: 46%;
+    padding-right: 0;
   }
   .tabs-nav-text {
     margin-top: 0;
@@ -589,8 +598,7 @@
 
   /* ...............first-screen.............. */
   .first-screen {
-    min-height: 98.4vh;
-    background-size: 48% 100%;
+    background-size: 48%;
   }
 
   .first-screen h1 {
@@ -640,8 +648,7 @@
 
   /* ...............first-screen.............. */
   .first-screen {
-    min-height: 87.9vh;
-    background-size: 46% 100%;
+    background-size: 46%;
   }
 
   .first-screen h1 {
@@ -653,10 +660,10 @@
 
   /* ...................tabs................... */
   .tabs-wrapper .nav {
-    width: 35%;
+    width: 33%;
   }
   .tabs-wrapper .tab-content {
-    width: 54%;
+    width: 50%;
   }
   .tabs-nav-text {
     margin-top: 73px;
