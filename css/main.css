@@ -12,7 +12,9 @@
   justify-content: center;
   align-items: center;
   background: url("../images/top.png") no-repeat center/contain;
-  background-size: 141% 100%;
+  background-size: 147% 100vh;
+  position: relative;
+  top: 0;
 }
 
 .first-screen h1 {
@@ -20,11 +22,17 @@
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
-  margin: 231px 30px 0 30px;
+  margin: 0 30px;
+  position: absolute;
+  top: -11vh;
+  width: 83%;
 }
 .arrow-wrapper {
   display: flex;
   justify-content: center;
+  position: absolute;
+  bottom: -50vh;
+  left: 45vw;
 }
 .arrow {
   width: 42px;
@@ -34,7 +42,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 159px 0 30px 0;
+  margin-bottom: 30px;
 }
 .arrow:hover {
   border-color: #f0145a;
@@ -380,14 +388,13 @@
 
   /* ...............first-screen.............. */
   .first-screen {
-    background-size: 117% 100%;
+    background-size: 118% 100vh;
   }
-
   .first-screen h1 {
-    margin: 489px 0 0 0;
-  }
-  .arrow {
-    margin: 417px 0 30px 0;
+    margin: 0 0;
+    position: absolute;
+    top: -3vh;
+    width: 83%;
   }
 
   /* ...................tabs................... */
@@ -515,14 +522,13 @@
 
   /* ...............first-screen.............. */
   .first-screen {
-    background-size: 65% 100%;
+    background-size: 66% 100vh;
   }
 
   .first-screen h1 {
-    margin: 361px 0 0 0;
-  }
-  .arrow {
-    margin: 289px 0 30px 0;
+    position: absolute;
+    top: -3vh;
+    width: 88%;
   }
 
   /* ...................tabs................... */
@@ -597,14 +603,13 @@
 
   /* ...............first-screen.............. */
   .first-screen {
-    background-size: 48% 100%;
+    background-size: 48% 100vh;
   }
 
   .first-screen h1 {
-    margin: 377px 0 0 0;
-  }
-  .arrow {
-    margin: 305px 0 30px 0;
+    position: absolute;
+    top: -3vh;
+    width: 92%;
   }
 
   /* ...................tabs................... */
@@ -647,14 +652,13 @@
 
   /* ...............first-screen.............. */
   .first-screen {
-    background-size: 46% 100%;
+    background-size: 46% 100vh;
   }
 
   .first-screen h1 {
-    margin: 477px 0 0 0;
-  }
-  .arrow {
-    margin: 405px 0 30px 0;
+    position: absolute;
+    top: -3vh;
+    width: 83%;
   }
 
   /* ...................tabs................... */
