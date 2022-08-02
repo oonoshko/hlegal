@@ -5,13 +5,12 @@
 
 /* ............card-service................. */
 .card-service {
-  padding: 30px 30px 60px 30px;
+  padding: 0 30px 60px 30px;
 }
 .card-service .card-service-wrapper {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-top: 132px;
 }
 .card-service .card-title {
   margin-bottom: 10px;
@@ -140,11 +139,10 @@
 
   /* ............card-service................. */
   .card-service {
-    padding: 60px 0;
+    padding: 0;
   }
   .card-service .card-service-wrapper {
     gap: 60px;
-    margin-top: 220px;
   }
   .card-service .card-service-wrapper h3 {
     font-size: 38px;
@@ -208,7 +206,6 @@
   /* ............card-service................. */
   .card-service .card-service-wrapper {
     gap: 60px;
-    margin-top: 116px;
   }
   s .card-service .text-down-card {
     max-width: 28.88%;

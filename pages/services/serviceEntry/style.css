@@ -4,9 +4,6 @@
 @import url(../../../css/footer.css);
 
 /* ............card-service................. */
-.card-service-wrapper {
-  margin-top: 132px;
-}
 .text-down-wrapper {
   display: flex;
   flex-direction: column;
@@ -170,7 +167,6 @@
     padding: 0;
   }
   .card-service-wrapper {
-    margin-top: 280px;
     gap: 60px;
   }
   .btn-blue {
@@ -209,12 +205,6 @@
 /* lg-устройства (больше или равно 992px) */
 @media (min-width: 1024px) {
   /* CSS для: 992px <= ширины <= 1119px */
-
-  /* ............card-service................. */
-
-  .card-service-wrapper {
-    margin-top: 176px;
-  }
 
   /* ..........card-publications.............. */
   .publications-down {
