@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>About Us</title>
+    <link rel="stylesheet" href="../../assets/slick/slick.css">
+    <link rel="stylesheet" href="../../assets/slick/slick-theme.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
-<body class="flex flex-col min-h-screen">
+<body class="flex flex-col min-h-screen footer-line">
     <header class="header">
         <div class="container">
             <div class="wrapper flex">
@@ -57,7 +60,7 @@
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1752 0H21L5.82482 47H0L15.1752 0Z"
                             fill="#F0145A" />
                     </svg>
-                    <span class="text-logo">contact</span>
+                    <span class="text-logo">about us</span>
                 </div>
                 <div class="burger-menu flex">
                     <input type="checkbox" class="checkbox">
@@ -69,15 +72,15 @@
                     </p>
                     <nav class="nav-burger">
                         <ul class="links color-blue">
-                            <li><a href="../aboutUs/" class="link background" target="_blank"
-                                    rel="noopener noreferrer">about us</a></li>
+                            <li><a href="#" class="link">about us</a></li>
                             <li><a href="../services/" class="link background" target="_blank"
                                     rel="noopener noreferrer">services</a></li>
                             <li><a href="../team/" class="link background" target="_blank"
                                     rel="noopener noreferrer">team</a></li>
                             <li><a href="../publication/" class="link background" target="_blank"
                                     rel="noopener noreferrer">publications</a></li>
-                            <li><a href="#" class="link background">contact</a></li>
+                            <li><a href="../contact/" class="link background" target="_blank"
+                                    rel="noopener noreferrer">contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -85,49 +88,91 @@
         </div>
     </header>
     <main class="flex-1">
-        <section class="contacts-form">
+        <section class="about-section">
             <div class="container">
-                <div class="wrapper flex flex-col items-center justify-between">
-                    <div class="up-content flex flex-col">
-                        <p class="address">Kyiv,<br> Mechnikova str, 14</p>
-                        <div class="tel-mail flex items-center wrap">
-                            <a href="tel:0800211927" class="tel">0800 211 927</a>
-                            <a href="mailto:contact@forstudy.space" class="mail">contact@forstudy.space</a>
+                <div class="about-wrapper">
+                    <div>
+                        <h2 class="title bg-gradient">We turn over the idea of legal services</h2>
+                        <p class="description">Consolidating many years of experience and practice, the company's
+                            lawyers
+                            accompany complex
+                            projects and achieve the adoption of a number of decisions that are important for the
+                            industry.
+                            Many people form the practice of applying the law of the sea in Ukraine.</p>
+                        <br>
+                        <p class="description">HLEGAL is a reliable
+                            business partner, confirmed by stable cooperation with international law firms, the trust of
+                            large Ukrainian and international companies, and the recognition of professional ratings.
+                        </p>
+                    </div>
+                    <div class="cardWrapper">
+                        <div class="card">
+                            <div class="titleWrapper">
+                                <img src="../../images/flag.png" alt="flag">
+                                <h4 class="number bg-gradient">10+</h4>
+                            </div>
+                            <p class="text">years of relevant experience</p>
                         </div>
-                        <div class="fb-text flex items-center">
-                            <a href="https://www.facebook.com/" target="_blank" rel="nofollow noopener">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" data-name="Ebene 1"
-                                    viewBox="0 0 1038 1038">
-                                    <path fill="currentColor"
-                                        d="M1024,512C1024,229.23016,794.76978,0,512,0S0,229.23016,0,512c0,255.554,187.231,467.37012,432,505.77777V660H302V512H432V399.2C432,270.87982,508.43854,200,625.38922,200,681.40765,200,740,210,740,210V336H675.43713C611.83508,336,592,375.46667,592,415.95728V512H734L711.3,660H592v357.77777C836.769,979.37012,1024,767.554,1024,512Z" />
-                                    <path fill="#fff"
-                                        d="M711.3,660,734,512H592V415.95728C592,375.46667,611.83508,336,675.43713,336H740V210s-58.59235-10-114.61078-10C508.43854,200,432,270.87982,432,399.2V512H302V660H432v357.77777a517.39619,517.39619,0,0,0,160,0V660Z" />
-                                </svg>
-                            </a>
-                            <p class="text">Our page <br>on facebook</p>
+                        <div class="card">
+                            <div class="titleWrapper">
+                                <img src="../../images/portfel.png" alt="portfel">
+                                <h4 class="number bg-gradient">30+</h4>
+                            </div>
+                            <p class="text">active clients who entrust us with their orders on a monthly basis</p>
+                        </div>
+                        <div class="card">
+                            <div class="titleWrapper">
+                                <img src="../../images/star.png" alt="star">
+                                <h4 class="number bg-gradient">500+</h4>
+                            </div>
+                            <p class="text">hours of pro bono work annually</p>
                         </div>
                     </div>
-                    <div class="down-content bg-lightGrey flex flex-col">
-                        <h2 class="title">We would like to help you</h2>
-                        <div class="forms-up flex flex-col">
-                            <form>
-                                <label>
-                                    <input class="text-form" type="text" name="name" placeholder="Name">
-                                </label>
-                                <label>
-                                    <textarea class="text-form message" type="text" name="message"
-                                        placeholder="Message"></textarea>
-                                </label>
-                                <h3>How to answer you?</h3>
-                                <label>
-                                    <input class="text-form" type="tel" name="phoneNumber" placeholder="Phone number">
-                                </label>
-                                <label>
-                                    <input class="text-form" type="email" name="email" placeholder="Email">
-                                </label>
-                                <button class="btn btn-blue" type="button">Send message</button>
-                            </form>
-                        </div>
+                </div>
+            </div>
+        </section>
+        <div class="bg-image">
+            <h1>Team</h1>
+        </div>
+        <section class="sectionDown">
+            <div class="container">
+                <div class="sectionDownWrapper">
+                    <p class="description">The historically unchanged legal profession has begun to reformat in recent
+                        years.
+                        Clients are feeling this, but law firms are still resisting evolution. Clients need convenience,
+                        simplicity, transparent payment. Google, IBM WatsOn, Symantec Clearwell prove that the
+                        technological
+                        revolution in legal services has begun and is imminent.
+                        <br><br>
+                        Quality is what we care about the most.<br><br>
+                        It's simple. If you are unhappy with our work, we will refund your money. We trust
+                        our clients. And we want our clients to trust us too.
+                    </p>
+                    <h2 class="title bg-gradient">Quality is what we care about the most.</h2>
+                </div>
+            </div>
+        </section>
+        <section class="slider bg-lightGrey">
+            <div class="container">
+                <h4>achievements</h4>
+                <div id="sliderAbout">
+                    <div class="sliderWrapper">
+                        <img src="../../images/Achievment-1.png" alt="Achievment">
+                    </div>
+                    <div class="sliderWrapper">
+                        <img src="../../images/Achievment-2.png" alt="Achievment">
+                    </div>
+                    <div class="sliderWrapper">
+                        <img src="../../images/Achievment-3.png" alt="Achievment">
+                    </div>
+                    <div class="sliderWrapper">
+                        <img src="../../images/Achievment-4.png" alt="Achievment">
+                    </div>
+                    <div class="sliderWrapper">
+                        <img src="../../images/Achievment-1.png" alt="Achievment">
+                    </div>
+                    <div class="sliderWrapper">
+                        <img src="../../images/Achievment-1.png" alt="Achievment">
                     </div>
                 </div>
             </div>
@@ -135,15 +180,14 @@
     </main>
     <footer class="footer bg-lightGrey">
         <div class="container">
-            <div class="wrapper flex flex-col items-center">
-                <div class="adress-footer flex flex-col items-center">
+            <div class="wrapper125">
+                <div class="adress-footer">
                     <span class="adress">Kyiv, Mechnikova str., 14/1</span>
                     <span class="dot"></span>
                     <a href="https://goo.gl/maps/D9Z2hyHaym2jxvPWA" class="map" target="_blank"
-                        rel="nofollow noopener">On
-                        map</a>
+                        rel="nofollow noopener">On map</a>
                 </div>
-                <div class="contacts flex flex-col items-center">
+                <div class="contacts">
                     <a href="https://www.facebook.com/" target="_blank" rel="nofollow noopener">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" data-name="Ebene 1"
                             viewBox="0 0 1038 1038">
@@ -162,6 +206,9 @@
             </div>
         </div>
     </footer>
+    <script src="../../assets/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/slick/slick.min.js"></script>
+    <script src="../../js/script.js"></script>
 </body>
 
 </html>

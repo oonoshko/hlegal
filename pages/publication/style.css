@@ -23,8 +23,7 @@ input[type="radio"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 38px;
-  width: 122px;
+  padding: 0 30px;
   line-height: 20px;
   text-align: center;
   color: #323264;
@@ -38,7 +37,6 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked + label {
-  width: 105px;
   background-color: #ffffff;
 }
 
@@ -46,20 +44,6 @@ input[id="radio-1"]:checked ~ .glider {
   background-color: #ffffff;
 }
 
-input[id="radio-2"]:checked ~ .glider {
-  background-color: transparent;
-}
-
-.glider {
-  position: absolute;
-  display: flex;
-  height: 38px;
-  width: 105px;
-  background-color: #e6e6f0;
-  border-radius: 12px;
-  z-index: 1;
-  transition: 0.25s ease-out;
-}
 .btn-center {
   justify-content: center;
 }

@@ -38,6 +38,7 @@
   height: 100%;
   border-radius: 12px;
   display: inline-block;
+  object-fit: cover;
 }
 .text-card {
   display: flex;
@@ -56,7 +57,7 @@
   transform: rotate(-90deg);
 }
 
-.card a:hover svg {
+.card:hover a > svg {
   color: #f0145a;
 }
 .card:hover p.name {
@@ -95,7 +96,6 @@
   }
   .team-section .card img {
     height: 100%;
-    object-fit: cover;
   }
 }
 

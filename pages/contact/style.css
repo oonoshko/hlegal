@@ -99,7 +99,7 @@ textarea {
   cursor: pointer;
   margin-bottom: 15px;
 }
-form:hover .text-form {
+input:hover {
   border: 1px solid #24a3ff;
   color: #000000;
 }

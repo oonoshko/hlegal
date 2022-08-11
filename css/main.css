@@ -11,7 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("../images/top.png") no-repeat center/contain;
+  background: url("../images/top.png") no-repeat top center/contain;
   background-size: 147% 100vh;
   position: relative;
   top: 0;
