@@ -105,7 +105,7 @@
                             in the field of information technology in Ukraine.
                         </p>
                         <div class="btn-line">
-                            <button type="button" class="btn btn-blue">Free consultation</button>
+                            <button id="popupBtn" type="button" class="btn btn-blue">Free consultation</button>
                         </div>
                     </div>
                     <div class="service-area">
@@ -200,6 +200,38 @@
                 </div>
             </div>
         </section>
+        <div id="popup" class="downContentWrapper">
+            <div class="container">
+                <div class="down-content bg-lightGrey flex flex-col">
+                    <div class=" titleWrapper">
+                        <h2 class="title">We would like to help you</h2>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2" />
+                            <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="forms-up flex flex-col">
+                        <form>
+                            <label>
+                                <input class="text-form" type="text" name="name" placeholder="Name">
+                            </label>
+                            <label>
+                                <textarea class="text-form message" type="text" name="message"
+                                    placeholder="Message"></textarea>
+                            </label>
+                            <h3>How to answer you?</h3>
+                            <label>
+                                <input class="text-form" type="tel" name="phoneNumber" placeholder="Phone number">
+                            </label>
+                            <label>
+                                <input class="text-form" type="email" name="email" placeholder="Email">
+                            </label>
+                            <button class="btn btn-blue" type="button">Send message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="footer bg-lightGrey">
         <div class="container">
@@ -231,6 +263,8 @@
 
         </div>
     </footer>
+    <script src="../../../assets/jquery-3.6.0.min.js"></script>
+    <script src="../../../js/popup.js"></script>
 </body>
 
 </html>

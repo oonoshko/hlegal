@@ -5,6 +5,7 @@ $('#slider').slick({
     autoplay: true,
     arrows: false,    
 });
+
 $('#sliderAbout').slick({
     dots: true,
     infinite: true,
